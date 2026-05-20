@@ -6,7 +6,6 @@ Author: David Thrane Christiansen
 
 import VersoManual
 import Phrasebook.Meta.Lean
-import Phrasebook.Papers
 
 -- This is a chapter that's included
 import Phrasebook.LinearAlgebra

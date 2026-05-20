@@ -7,16 +7,17 @@ To build it, run:
 $ lake exe phrasebook
 ```
 
+To display the documentation in your browser, you need a simple HTTP server, like the one included in Python. Run:
+```
+$ python -m http.server 8000 _out/html-multi
+```
+and navigate in your browser to <http://localhost:8000>. You will see the local copy of the documentation as it was built on your computer.
+
+If you do not have Python installed, you can open the generated output in `_out/html-multi/index.html` in your browser.
+
 We use the Verso textbook template as a base. Its Readme file follows below:
 
 # Original Verso readme:
-
-This is a demonstration of a textbook built in Verso's manual genre.
-
-To build it, run:
-```
-$ lake exe phrasebook
-```
 
 This textbook is written in the `Manual` genre. It uses the same
 version of Lean for the example code as it does for Verso itself;
