@@ -1,14 +1,18 @@
-name = "textbook"
-defaultTargets = ["TextbookTemplate", "textbook"]
+name = "phrasebook"
+defaultTargets = ["Phrasebook", "phrasebook"]
 
 [[require]]
 name = "verso"
 git = "https://github.com/leanprover/verso"
-rev = "v4.29.0"
+rev = "v4.30.0-rc2"
+
+[[require]]
+name = "mathlib"
+path = "../../mathlib4-master"
 
 [[lean_lib]]
-name = "TextbookTemplate"
+name = "Phrasebook"
 
 [[lean_exe]]
-name = "textbook"
-root = "TextbookTemplateMain"
+name = "phrasebook"
+root = "Main"

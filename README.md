@@ -1,8 +1,21 @@
+This is a template for what would become a Mathlib phrasebook.
+
+The documentation is intended to answer the question: "How do I say ... using Mathlib?"
+
+To build it, run:
+```
+$ lake exe phrasebook
+```
+
+We use the Verso textbook template as a base. Its Readme file follows below:
+
+# Original Verso readme:
+
 This is a demonstration of a textbook built in Verso's manual genre.
 
 To build it, run:
 ```
-$ lake exe textbook
+$ lake exe phrasebook
 ```
 
 This textbook is written in the `Manual` genre. It uses the same
