@@ -8,12 +8,7 @@ import VersoManual
 import Phrasebook.Meta.Lean
 import Mathlib
 
--- This gets access to most of the manual genre (which is also useful for textbooks)
 open Verso.Genre Manual
-
--- This gets access to Lean code that's in code blocks, elaborated in the same process and
--- environment as Verso
--- Write a code block with ```savedLean ... ``` to save it to an external file.
 open Verso.Genre.Manual.InlineLean
 
 
@@ -32,7 +27,6 @@ We assume basic knowledge of both Lean and linear algebra.
 
 ::: leanSection
 ```lean -show
--- This block uses the -show flag to not appear in final output (while it is still used in code below).
 variable {x y z : ℤ} {v w : Fin 2 → ℤ}
 ```
 The defining characteristic shared between modules and vector spaces is the properties of their scalar multiplication.

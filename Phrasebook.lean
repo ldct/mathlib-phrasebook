@@ -7,21 +7,14 @@ Author: David Thrane Christiansen
 import VersoManual
 import Phrasebook.Meta.Lean
 
--- This is a chapter that's included
+-- When adding new pages, add them to the `import` statements here,
+-- and to the `{include 1 ...}` lines below.
 import Phrasebook.LinearAlgebra
+import Phrasebook.Template
 
--- This gets access to most of the manual genre (which is also useful for textbooks)
 open Verso.Genre Manual
 
--- This gets access to Lean code that's in code blocks, elaborated in the same process and
--- environment as Verso
-open Verso.Genre.Manual.InlineLean
-
-
 open Phrasebook
-
-set_option pp.rawOnError true
-
 
 #doc (Manual) "Mathlib Phrasebook" =>
 
@@ -33,6 +26,8 @@ authors := ["the Mathlib community"]
 The Mathlib phrasebook tells you the answer to questions of the form "How do I say ... using Mathlib?"
 
 {include 1 Phrasebook.LinearAlgebra}
+
+{include 1 Phrasebook.Template}
 
 # Index
 %%%

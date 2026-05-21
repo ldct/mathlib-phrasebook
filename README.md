@@ -12,6 +12,7 @@ To display the documentation in your browser, you need a simple HTTP server, lik
 $ python -m http.server 8000 _out/html-multi
 ```
 and navigate in your browser to <http://localhost:8000>. You will see the local copy of the documentation as it was built on your computer.
+(You can also run the `local-build.sh` script.)
 
 If you do not have Python installed, you can open the generated output in `_out/html-multi/index.html` in your browser.
 
