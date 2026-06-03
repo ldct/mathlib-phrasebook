@@ -12,6 +12,7 @@ import Phrasebook.Meta.VersionString
 
 -- When adding new pages, add them to the `import` statements here,
 -- and to the `{include 1 ...}` lines below.
+import Phrasebook.AdditiveCombinatorics
 import Phrasebook.LinearAlgebra
 import Phrasebook.Polynomials
 import Phrasebook.ErgodicMaps
@@ -46,6 +47,8 @@ This document has been last updated at *{now}[]* using Lean *{versionString}[]* 
 {include 1 Phrasebook.LinearAlgebra}
 
 {include 1 Phrasebook.Polynomials}
+
+{include 1 Phrasebook.AdditiveCombinatorics}
 
 {include 1 Phrasebook.ErgodicMaps}
 
