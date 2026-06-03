@@ -16,7 +16,8 @@ import Phrasebook.AdditiveCombinatorics
 import Phrasebook.LinearAlgebra
 import Phrasebook.Polynomials
 import Phrasebook.ErgodicMaps
-import Phrasebook.Template
+-- You can use `Phrasebook.Template` as a starting point for your own entry.
+-- import Phrasebook.Template
 
 open Verso.Genre Manual
 
@@ -51,8 +52,6 @@ This document has been last updated at *{now}[]* using Lean *{versionString}[]* 
 {include 1 Phrasebook.AdditiveCombinatorics}
 
 {include 1 Phrasebook.ErgodicMaps}
-
-{include 1 Phrasebook.Template}
 
 # Index
 %%%
