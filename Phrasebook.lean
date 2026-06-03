@@ -13,6 +13,7 @@ import Phrasebook.Meta.VersionString
 -- When adding new pages, add them to the `import` statements here,
 -- and to the `{include 1 ...}` lines below.
 import Phrasebook.LinearAlgebra
+import Phrasebook.ErgodicMaps
 import Phrasebook.Template
 
 open Verso.Genre Manual
@@ -42,6 +43,8 @@ Alternatively, if you want to get an impression of Mathlib's coverage of a parti
 This document has been last updated at *{now}[]* using Lean *{versionString}[]* and Mathlib commit {mathlibCommit}[].
 
 {include 1 Phrasebook.LinearAlgebra}
+
+{include 1 Phrasebook.ErgodicMaps}
 
 {include 1 Phrasebook.Template}
 
