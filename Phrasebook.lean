@@ -27,6 +27,17 @@ authors := ["the Mathlib community"]
 
 {index}[example]
 The Mathlib phrasebook tells you the answer to questions of the form "How do I say ... using Mathlib?"
+When you have a Lean formalization project you are working on or just getting started with,
+the phrasebook tells you the idiomatic way to translate from mathematics to Mathlib.
+
+The phrasebook is aimed at readers who are familiar with the mathematical subject and who know some Lean.
+We recommend first having finished [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/) before using the phrasebook.
+This textbook is an excellent resource for getting started and explains its contents at a gentler pace.
+More learning resources are available [on the community-maintained learning resources page](https://leanprover-community.github.io/learn.html).
+
+The phrasebook is best consulted with a question in your mind, of the form "How do I ...?".
+To get an answer to your question, use the table of contents on the left of the page to navigate to the page corresponding to your topic.
+Alternatively, if you want to get an impression of Mathlib's coverage of a particular subject, you can also read the corresponding chapter from top to bottom.
 
 This document has been last updated at *{now}[]* using Lean *{versionString}[]* and Mathlib commit {mathlibCommit}[].
 
