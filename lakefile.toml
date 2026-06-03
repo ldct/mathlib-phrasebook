@@ -1,6 +1,9 @@
 name = "phrasebook"
 defaultTargets = ["Phrasebook", "phrasebook"]
 
+[leanOptions]
+linter.unusedVariables = false # Disabled because it gives false positives when the variable is used in inline Verso code blocks.
+
 [[require]]
 name = "verso"
 git = "https://github.com/leanprover/verso"
