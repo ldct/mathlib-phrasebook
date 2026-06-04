@@ -43,7 +43,7 @@ Mathlib has one typeclass called {name}`Module` that can be used in combination 
 to express semimodules, modules and vector spaces in a uniform way.
 The defining characteristic shared between modules and vector spaces is the properties of their scalar multiplication.
 Scalar multiplication is written `(· • ·)` (`\bu`) and called `smul` in declaration names,
-so for example distributivity of multiplication is written {lean}`(x * y) • v = x • (y • v)` (see {name}`mul_smul`).
+so for example associativity of multiplication is written {lean}`(x * y) • v = x • (y • v)` (see {name}`mul_smul`).
 
 To say `V` is a vector space over the field `K`, write:
 
