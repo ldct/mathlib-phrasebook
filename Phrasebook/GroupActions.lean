@@ -1,0 +1,60 @@
+/-
+Copyright (c) 2026 Your Name Here. All rights reserved.
+Released under Apache 2.0 license as described in the file LICENSE.
+Authors: Your Name here
+-/
+
+import VersoManual
+import Phrasebook.Meta.Lean
+import Mathlib
+
+open Verso.Genre Manual
+
+open Verso.Genre.Manual.InlineLean
+
+
+open Phrasebook
+
+set_option pp.rawOnError true
+
+#doc (Manual) "How to write standard group actions using Mathlib" =>
+
+This page assumes you have already read [Mathematics in Lean](https://leanprover-community.github.io/mathematics_in_lean/C09_Groups_and_Rings.html#group-actions).
+
+# The left multiplication action
+
+As mentioned in Mathematics in Lean, the typeclass `MulAction G X` allows us to write `g • x` for the action of a group element `g : G` on an element `x : X`. Given types `G` and `X`, only one action can be inferred (since we need an unambiguous value for `g • x`). In the case where the literature has multiple actions one of them is chosen as the default action. For instance, given `G = X` and `[Group G]` the action of `G` on itself by left multiplication is chosen as the default action.
+
+::: leanSection
+```lean
+example {G} [Group G] (g s : G) : g • s = g * s :=
+ smul_eq_mul g s
+```
+:::
+
+# The conjugation action
+
+To write different actions, we use type synonyms. The type `ConjAct G` is a type synonym for `G`; a term of type `ConjAct G` contains exactly the same data as a term of type `G`, and can be converted to `G` using the function `ofConjAct`.
+
+This allows us to have elements of `ConjAct G` act on `G` by conjugation.
+
+```lean
+open ConjAct in
+example {G} [Group G] (g : ConjAct G) (s : G) :
+    g • s = ofConjAct g * s * (ofConjAct g)⁻¹ :=
+  smul_def g s
+```
+
+# The left multiplication action on subsets
+
+A group acts on its subsets by left multiplication. Recall that given a group structure `Group G` on a type `G`, the type of subsets of `G` is `Set G`. Mathlib provides a typeclass `MulAction G (Set G)` for this action, and a notation `g • S` for the action of `g : G` on `S : Set G`, which is enabled in the `Pointwise` namespace.
+
+```lean
+open Pointwise
+open DihedralGroup
+
+def S : Set (DihedralGroup 3) := {.r 0, .r 1}
+def g : DihedralGroup 3 := .r 0
+example : g • S = {.r 0, .r 1} := by
+  simp [g, S]
+```
