@@ -53,10 +53,16 @@ example {G} [Group G] (g : ConjAct G) (s : G) :
     g • s = ofConjAct g * s * (ofConjAct g)⁻¹ :=
   smul_def g s
 ```
+:::
 
 # The left multiplication action on subsets
 
-A group acts on its subsets by left multiplication. Recall that given a group structure `Group G` on a type `G`, the type of subsets of `G` is `Set G`. Mathlib provides a typeclass `MulAction G (Set G)` for this action, and a notation `g • S` for the action of `g : G` on `S : Set G`, which is enabled in the `Pointwise` namespace.
+:::leanSection
+```lean -show
+variable {G X : Type*} [Monoid G] (x : X) [MulAction G X]
+```
+
+A group acts on its subsets by left multiplication. Recall that given a group structure {lean}`Group G` on a type `G`, the type of subsets of `G` is {lean}`Set G`. Mathlib provides an instance {name}`Set.mulActionSet` `:` {lean}`MulAction G (Set G)` for this action, and a notation `g • S` for the action of `g : G` on `S : Set G`, which is enabled in the `Pointwise` namespace.
 
 ```lean
 open Pointwise
@@ -67,3 +73,5 @@ def g : DihedralGroup 3 := .r 0
 example : g • S = {.r 0, .r 1} := by
   simp [g, S]
 ```
+
+:::
