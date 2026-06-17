@@ -17,6 +17,11 @@ import Phrasebook.AlgebraicGeometry
 import Phrasebook.ErgodicMaps
 import Phrasebook.Filters
 import Phrasebook.GroupActions
+import Phrasebook.DifferentialCalculus
+import Phrasebook.HaarMeasure
+import Phrasebook.Groups
+import Phrasebook.LieAlgebras
+import Phrasebook.RootSystems
 import Phrasebook.LinearAlgebra
 import Phrasebook.Polynomials
 -- You can use `Phrasebook.Template` as a starting point for your own entry.
@@ -61,6 +66,16 @@ This document has been last updated at *{now}[]* using Lean *{versionString}[]* 
 {include 1 Phrasebook.ErgodicMaps}
 
 {include 1 Phrasebook.AlgebraicGeometry}
+
+{include 1 Phrasebook.DifferentialCalculus}
+
+{include 1 Phrasebook.HaarMeasure}
+
+{include 1 Phrasebook.Groups}
+
+{include 1 Phrasebook.LieAlgebras}
+
+{include 1 Phrasebook.RootSystems}
 
 # Index
 %%%
