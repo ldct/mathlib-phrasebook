@@ -14,6 +14,7 @@ import Phrasebook.Meta.VersionString
 -- and to the `{include 1 ...}` lines below.
 import Phrasebook.AdditiveCombinatorics
 import Phrasebook.LinearAlgebra
+import Phrasebook.Filters
 import Phrasebook.Polynomials
 import Phrasebook.ErgodicMaps
 -- You can use `Phrasebook.Template` as a starting point for your own entry.
@@ -46,6 +47,8 @@ Alternatively, if you want to get an impression of Mathlib's coverage of a parti
 This document has been last updated at *{now}[]* using Lean *{versionString}[]* and Mathlib commit {mathlibCommit}[].
 
 {include 1 Phrasebook.LinearAlgebra}
+
+{include 1 Phrasebook.Filters}
 
 {include 1 Phrasebook.Polynomials}
 
