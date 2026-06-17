@@ -23,9 +23,13 @@ This page assumes you have already read [Mathematics in Lean](https://leanprover
 
 # The left multiplication action
 
-As mentioned in Mathematics in Lean, the typeclass `MulAction G X` allows us to write `g • x` for the action of a group element `g : G` on an element `x : X`. Given types `G` and `X`, only one action can be inferred (since we need an unambiguous value for `g • x`). In the case where the literature has multiple actions one of them is chosen as the default action. For instance, given `G = X` and `[Group G]` the action of `G` on itself by left multiplication is chosen as the default action.
+:::leanSection
+```lean -show
+variable {G X : Type*} [Monoid G] (g : G) (x : X) [MulAction G X]
+```
 
-::: leanSection
+As mentioned in Mathematics in Lean, the typeclass {lean}`MulAction G X` allows us to write {lean}`g • x` for the action of a group element `g : G` on an element `x : X`. Given types `G` and `X`, only one action can be inferred (since we need an unambiguous value for {lean}`g • x`). In the case where the literature has multiple actions one of them is chosen as the default action. For instance, given `G = X` and `[Group G]` the action of `G` on itself by left multiplication is chosen as the default action.
+
 ```lean
 example {G} [Group G] (g s : G) : g • s = g * s :=
  smul_eq_mul g s
@@ -34,9 +38,14 @@ example {G} [Group G] (g s : G) : g • s = g * s :=
 
 # The conjugation action
 
-To write different actions, we use type synonyms. The type `ConjAct G` is a type synonym for `G`; a term of type `ConjAct G` contains exactly the same data as a term of type `G`, and can be converted to `G` using the function `ofConjAct`.
+:::leanSection
+```lean -show
+variable {G X : Type*} [Monoid G] (g : G) (x : X) [MulAction G X]
+```
 
-This allows us to have elements of `ConjAct G` act on `G` by conjugation.
+To write different actions, we use type synonyms. The type {lean}`ConjAct G` is a type synonym for `G`; a term of type {lean}`ConjAct G` contains exactly the same data as a term of type `G`, and can be converted to `G` using the function {name}`ConjAct.ofConjAct`.
+
+This allows us to have elements of {lean}`ConjAct G` act on `G` by conjugation.
 
 ```lean
 open ConjAct in
