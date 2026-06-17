@@ -54,15 +54,13 @@ This document has been last updated at *{now}[]* using Lean *{versionString}[]* 
 
 {include 1 Phrasebook.Polynomials}
 
+{include 1 Phrasebook.GroupActions}
+
 {include 1 Phrasebook.AdditiveCombinatorics}
 
 {include 1 Phrasebook.ErgodicMaps}
 
-<<<<<<< HEAD
-{include 1 Phrasebook.GroupActions}
-=======
 {include 1 Phrasebook.AlgebraicGeometry}
->>>>>>> origin/main
 
 # Index
 %%%
