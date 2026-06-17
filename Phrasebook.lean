@@ -13,10 +13,12 @@ import Phrasebook.Meta.VersionString
 -- When adding new pages, add them to the `import` statements here,
 -- and to the `{include 1 ...}` lines below.
 import Phrasebook.AdditiveCombinatorics
+import Phrasebook.AlgebraicGeometry
+import Phrasebook.ErgodicMaps
+import Phrasebook.Filters
+import Phrasebook.GroupActions
 import Phrasebook.LinearAlgebra
 import Phrasebook.Polynomials
-import Phrasebook.ErgodicMaps
-import Phrasebook.GroupActions
 -- You can use `Phrasebook.Template` as a starting point for your own entry.
 -- import Phrasebook.Template
 
@@ -48,13 +50,19 @@ This document has been last updated at *{now}[]* using Lean *{versionString}[]* 
 
 {include 1 Phrasebook.LinearAlgebra}
 
+{include 1 Phrasebook.Filters}
+
 {include 1 Phrasebook.Polynomials}
 
 {include 1 Phrasebook.AdditiveCombinatorics}
 
 {include 1 Phrasebook.ErgodicMaps}
 
+<<<<<<< HEAD
 {include 1 Phrasebook.GroupActions}
+=======
+{include 1 Phrasebook.AlgebraicGeometry}
+>>>>>>> origin/main
 
 # Index
 %%%
