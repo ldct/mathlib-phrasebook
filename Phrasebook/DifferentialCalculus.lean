@@ -60,7 +60,7 @@ In addition {name}`HasDerivAt` and {name}`deriv` have variants
 ## Coefficients
 
 Mathlib's theory of differential calculus supports quite general coefficients including the reals,
-the complex numbers, and the p-adics numbers. For example here is the statement that {name}`deriv`
+the complex numbers, and the $`p`-adic numbers. For example here is the statement that {name}`deriv`
 and {name}`HasDerivAt` are mutually compatible for a map of the $`p`-adics:
 ```lean
 example (p : ℕ) [Fact p.Prime] (f : ℚ_[p] → ℚ_[p])
