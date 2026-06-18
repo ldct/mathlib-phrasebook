@@ -43,7 +43,7 @@ example (x y z : L) :
   lie_jacobi x y z
 ```
 
-The following adds a representation
+The following adds a representation of a Lie algebra $`L` on a module $`M` to the Lean environment
 ```lean
 variable {M : Type*}
   [AddCommGroup M] [Module R M]
