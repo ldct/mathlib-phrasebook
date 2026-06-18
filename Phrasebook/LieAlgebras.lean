@@ -62,7 +62,7 @@ variable {L' : Type*}
 # Properties of Lie algebras
 
 Familiar concepts from Lie theory appear in Mathlib as follows:
-- *Nilpotentcy* {name}`LieModule.IsNilpotent` (generalised to Lie modules)
+- *Nilpotency* {name}`LieModule.IsNilpotent` (generalised to Lie modules)
 - *Solvability* {name}`LieAlgebra.IsSolvable`
 - *Simplicity* {name}`LieAlgebra.IsSimple`
 
