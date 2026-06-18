@@ -51,7 +51,7 @@ variable {M : Type*}
 ```
 
 This data determines a morphism of Lie algebras $`L → End(M)`. In Mathlib this morphism appears
-as {name}`LieModule.toEnd`. More generally morphisms and equivalences between any Lie algebras
+as {name}`LieModule.toEnd`. More generally morphisms and isomorphisms between any Lie algebras
 may be added to the environment using a special notation as follows
 ```lean
 variable {L' : Type*}

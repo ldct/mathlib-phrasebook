@@ -32,7 +32,7 @@ Mathlib has a theory of differential calculus. Given functions:
 variable (f : ℝ → ℝ) (g : ℝ → ℝ)
 ```
 Mathlib has tools as follows:
-1. {lean}`Differentiable ℝ f` asks whether $`f` differentiable everywhere.
+1. {lean}`Differentiable ℝ f` asks whether $`f` is differentiable everywhere.
 2. {lean}`∀ x, HasDerivAt f (g x) x` asks whether $`g` is the derivative of `f` everywhere.
 3. {lean}`deriv f` is the derivative of $`f` (or zero if it is not differentiable).
 

@@ -50,7 +50,7 @@ example (x y z : A) :
 
 # Properties of Groups
 
-Morphisms and equivalences of groups exist and have a special notation as shown below:
+Morphisms and isomorphisms of groups exist and have a special notation as shown below:
 ```lean
 variable (H : Type*) [Group H]
   (f : G →* H) (e : G ≃* H)
@@ -72,7 +72,7 @@ as well as many more.
 
 # Notable results
 
-The following are some notable results in Mathlib's Lie theory library:
+The following are some notable results in Mathlib's group theory library:
 - *Lagrange's theorem* {name}`Subgroup.card_subgroup_dvd_card`
 - *Sylow's first theorem* {name}`Sylow.exists_subgroup_card_pow_prime`
 - *Simplicity of the alternating group* {name}`alternatingGroup.isSimpleGroup`
