@@ -28,7 +28,7 @@ We describe Mathlib's theory of root systems and root data in the sections below
 # First examples
 
 A root system is a finite collection of non-zero vectors in Euclidean space that is invariant
-under reflection in the hyperplane perpendicular to any of the vectors. In fact this data
+under reflection in the hyperplane perpendicular to any of the vectors. In fact, this data
 determines the inner product up to scale and alternative definitions exist which obviate the need
 to supply the inner product as part of the data. Mathlib omits the inner product, partly
 because it allows a unified treatment of root systems and root data.
