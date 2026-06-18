@@ -27,8 +27,9 @@ We describe Mathlib's theory of Haar measure in the sections below.
 
 # Existence
 
-Mathlib contains the theory of Haar measure for locally compact groups, including existence
-and uniqueness results.
+A locally compact group admits a unique left-invariant measure which is unique up to scale (subject
+to mild additional hypotheses). This is known as the Haar measure. Mathlib contains the theory of
+Haar measure, including existence and uniqueness.
 
 As the Haar measure is only unique up to scale, to obtain a Haar measure, one must supply a compact
 subset $`K` (with non-empty interior) which is deemed to have unit measure. The following
