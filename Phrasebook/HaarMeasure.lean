@@ -44,8 +44,7 @@ variable {G : Type*}
 ```
 Note that the existence of $`K` ensures that $`G` is locally compact:
 ```lean
-example :
-    LocallyCompactSpace G :=
+example : LocallyCompactSpace G :=
   K.locallyCompactSpace_of_group
 ```
 
@@ -63,8 +62,7 @@ The typeclass {name}`MeasureTheory.Measure.IsMulLeftInvariant` expresses that a 
 invariant and we can witness that a Haar measure is left invariant as follows:
 ```lean
 open MeasureTheory.Measure in
-example :
-    (haarMeasure K).IsMulLeftInvariant :=
+example : (haarMeasure K).IsMulLeftInvariant :=
   inferInstance
 ```
 
@@ -78,13 +76,11 @@ We can witness that Mathlib knows such lemmas apply to types such as the reals a
 follows:
 ```lean
 open MeasureTheory MeasureTheory.Measure in
-example :
-    IsAddHaarMeasure (G := ℝ) volume :=
+example : IsAddHaarMeasure (G := ℝ) volume :=
   inferInstance
 
 open MeasureTheory MeasureTheory.Measure in
-example :
-    IsAddHaarMeasure (G := UnitAddCircle) volume :=
+example : IsAddHaarMeasure (G := UnitAddCircle) volume :=
   inferInstance
 ```
 
