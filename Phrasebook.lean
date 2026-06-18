@@ -53,27 +53,27 @@ Alternatively, if you want to get an impression of Mathlib's coverage of a parti
 
 This document has been last updated at *{now}[]* using Lean *{versionString}[]* and Mathlib commit {mathlibCommit}[].
 
-{include 1 Phrasebook.LinearAlgebra}
-
-{include 1 Phrasebook.Filters}
-
-{include 1 Phrasebook.Polynomials}
-
-{include 1 Phrasebook.GroupActions}
-
 {include 1 Phrasebook.AdditiveCombinatorics}
-
-{include 1 Phrasebook.ErgodicMaps}
 
 {include 1 Phrasebook.AlgebraicGeometry}
 
 {include 1 Phrasebook.DifferentialCalculus}
 
-{include 1 Phrasebook.HaarMeasure}
+{include 1 Phrasebook.ErgodicMaps}
+
+{include 1 Phrasebook.Filters}
+
+{include 1 Phrasebook.GroupActions}
 
 {include 1 Phrasebook.Groups}
 
+{include 1 Phrasebook.HaarMeasure}
+
 {include 1 Phrasebook.LieAlgebras}
+
+{include 1 Phrasebook.LinearAlgebra}
+
+{include 1 Phrasebook.Polynomials}
 
 {include 1 Phrasebook.RootSystems}
 
