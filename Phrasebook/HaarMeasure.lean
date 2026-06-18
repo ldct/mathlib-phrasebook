@@ -32,7 +32,7 @@ and uniqueness results.
 
 As the Haar measure is only unique up to scale, to obtain a Haar measure, one must supply a compact
 subset $`K` (with non-empty interior) which is deemed to have unit measure. The following
-demonstates this in action:
+demonstrates this in action:
 ```lean
 variable {G : Type*}
   [Group G] [TopologicalSpace G] [IsTopologicalGroup G]
