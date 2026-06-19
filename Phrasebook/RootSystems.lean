@@ -79,13 +79,18 @@ Some notable results and constructions contained in Mathlib are:
 - A root system determines a Lie algebra {name}`RootPairing.GeckConstruction.lieAlgebra`, and this
   Lie algebra is semisimple:
   ```lean -show
-  variable {K : Type*} [Field K] [CharZero K] [DecidableEq ι] [Fintype ι] [AddCommGroup M]
-    [Module K M] [AddCommGroup N] [Module K N] {P : RootPairing ι K M N} [P.IsRootSystem]
-    [P.IsCrystallographic] {b : P.Base} [Fact ((4 - b.cartanMatrix).det ≠ 0)] [P.IsReduced]
-    [P.IsIrreducible] [IsAlgClosed K]
+  variable {ι K M N : Type*}
+    [Field K] [CharZero K] [IsAlgClosed K]
+    [DecidableEq ι] [Fintype ι]
+    [AddCommGroup M] [Module K M]
+    [AddCommGroup N] [Module K N]
+    {P : RootPairing ι K M N}
+    [P.IsRootSystem] [P.IsCrystallographic] [P.IsReduced] [P.IsIrreducible]
+    {b : P.Base}
+    [Fact ((4 - b.cartanMatrix).det ≠ 0)] -- TODO Drop this!
   open LieAlgebra
   ```
   ```lean
-  #synth IsSemisimple K
+  #synth HasTrivialRadical K
     (RootPairing.GeckConstruction.lieAlgebra b)
   ```
