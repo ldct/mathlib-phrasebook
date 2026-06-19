@@ -21,7 +21,9 @@ open Phrasebook
 
 set_option pp.rawOnError true
 
-#doc (Manual) "Working with ergodic maps in Mathlib" =>
+#doc (Manual) "Ergodic maps" =>
+
+We describe Mathlib's theory of ergodic maps (and measures) in the sections below.
 
 # Ergodic maps
 
