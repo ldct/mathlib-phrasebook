@@ -520,7 +520,7 @@ theorem flat_of_flat_stalkMap (f : X ⟶ Y)
     intro x
     rw [RingHom.Flat.respectsIso.arrow_mk_iso_iff]
     · apply H
-      dsimp at x
+      bdsimp at x
       exact pullback.fst f _ x
     · dsimp [Scheme.Cover.pullbackHom]
       apply Iso.symm <| Scheme.stalkMapIsoOfIsPullback
