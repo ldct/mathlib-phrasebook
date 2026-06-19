@@ -77,4 +77,15 @@ In addition the following concepts also all exist:
 Some notable results and constructions contained in Mathlib are:
 - Any root system over a field of characteristic zero has a base {name}`RootPairing.nonempty_base`
 - A root system determines a Lie algebra {name}`RootPairing.GeckConstruction.lieAlgebra`, and this
-  Lie algebra is semisimple {name}`RootPairing.GeckConstruction.instHasTrivialRadical`.
+  Lie algebra is semisimple:
+  ```lean -show
+  variable {K : Type*} [Field K] [CharZero K] [DecidableEq ι] [Fintype ι] [AddCommGroup M]
+    [Module K M] [AddCommGroup N] [Module K N] {P : RootPairing ι K M N} [P.IsRootSystem]
+    [P.IsCrystallographic] {b : P.Base} [Fact ((4 - b.cartanMatrix).det ≠ 0)] [P.IsReduced]
+    [P.IsIrreducible] [IsAlgClosed K]
+  open LieAlgebra
+  ```
+  ```lean
+  #synth IsSemisimple K
+    (RootPairing.GeckConstruction.lieAlgebra b)
+  ```
