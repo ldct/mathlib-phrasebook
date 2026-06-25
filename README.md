@@ -1,5 +1,8 @@
 # A Mathlib Phrasebook
 
+[The Mathlib phrasebook is available online here](https://leanprover-community.github.io/mathlib-phrasebook/).
+This is the development repository for the phrasebook.
+
 The documentation is intended to answer the question: "How do I say ... using Mathlib?"
 where "..." stands for a mathematical topic or object.
 As a [how-to guide](https://diataxis.fr/how-to-guides/), the focus is on practical guidance
